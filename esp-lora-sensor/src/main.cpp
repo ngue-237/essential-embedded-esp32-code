@@ -66,6 +66,9 @@ void setup() {
 
 }
 
+
+
+
 void loop() {
   //capacitive soil moisture
   int sensorVal = analogRead(SOIL_MOISTURE_SENSOR_PIN);
@@ -100,7 +103,7 @@ void loop() {
     delay(100000);
     }
   double humidity = dht.readHumidity();
-  Serial.println("Temperature: " + String(temperature)+ "°C");
+  //Serial.println("Temperature: " + String(temperature)+ "°C");
   // Serial.println("Humidity: " + String(humidity)+ "%");
 
   //ds18b20 sensor
